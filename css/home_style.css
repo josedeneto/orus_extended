@@ -1,0 +1,449 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*GLOBAL STYLE*/
+
+ul {
+    /*#0D0E0F falando sobre nos
+    #090B0B vantagens
+    #00D7F3 botao 
+    #060708 menu
+    #009CE0 primary b
+    #525354 cinza
+    #101112 modulos
+    #080909 preto perguntas frequentes
+    #060708 antes rodape*/
+    list-style: none;
+}
+
+.interface {
+    max-width: 1200px;
+    margin: auto;
+}
+
+:root {
+    --bg-color: rgb(27, 25, 25);
+    --bg-menu: #060708;
+    --box-why-us: #090B0B;
+    --text-color-gray: #525354;
+    --border-color: #00D7F3;
+    --primary-color: #009CE0;
+    --modulos: #101112;
+    --bg-rodape: #060708;
+    --bg-select-faq: #080909;
+    --bg-color-box-testemunha: #080909;
+
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+body {
+    background-color: #060708;
+    color: aliceblue;
+    font-family: 'Nunito', sans-serif;
+}
+
+/*HEADER STYLE*/
+header {
+    padding: 20px 3%;
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header ul {
+    list-style: none;
+}
+
+header a {
+    display: inline-block;
+    text-decoration: none;
+    color: #919194;
+    transition: 0.3s;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0px 40px;
+}
+
+header nav ul li a:hover {
+    transform: scale(1.1);
+    color: yellow;
+}
+
+header .interface #logo {
+    background-color: blueviolet;
+    width: 50px;
+    border-radius: 50%;
+    height: 50px;
+    text-align: center;
+}
+
+.interface .div-auth {
+    display: inline-block;
+}
+
+.div-auth a {
+    margin-right: 30px;
+    font-weight: 700;
+    font-size: 14px;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.div-auth button {
+    padding: 10px;
+    border: 1px solid blueviolet;
+    border-radius: 5px;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: transparent;
+    padding: 12px;
+}
+
+/*TOP STYLE*/
+.top-information {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../assets/images/bg-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.top-information h1 {
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+    margin: 0px 0px 10px;
+    line-height: 41.6px;
+}
+
+.top-information p {
+    margin-bottom: 40px;
+    text-align: center;
+    line-height: 25.6px;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--text-color-gray);
+}
+
+.top-information button {
+    display: block;
+    color: #fff;
+    padding: 15px 25px;
+    background-color: blueviolet;
+    border-radius: 4px;
+    border: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    
+}
+
+/*WHY US STYLE*/
+.why-us {
+    width: 100%;
+}
+
+.why-us .flex {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.why-us .interface h2 {
+    text-align: center;
+    margin-bottom: 70px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 700;
+}
+.why-us .interface .flex .box h2{
+ color: #E1E1E6; 
+ font-size: 28px;
+ font-weight: 700;
+ margin-bottom: 0px;
+ text-align: left;
+}
+
+.box {
+    width: 335px;
+    background-color: var(--box-why-us);
+    padding: 20px;
+    border: 0 solid black;
+    border-radius: 4px;
+    box-shadow: 1px 1px 5px black;
+}
+
+.box p {
+    font-size: 14px;
+    color: var(--text-color-gray);
+}
+
+.box h2 {
+    font-size: 20px;
+    margin-bottom: 0;
+    text-align: start;
+}
+
+
+/*PLAN STUDY*/
+
+.plan-study {
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.plan-study h2 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    padding: 40px;
+}
+
+.plan-study .flex {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.plan-study .box-plan {
+    width: 250px;
+    border-radius: 4px;
+    padding: 10px 15px;
+    background-color: var(--modulos);
+    box-shadow: 1px 10px 105px black;
+}
+
+
+.box-plan li {
+    padding: 10px 0px;
+    font-size: 13px;
+}
+
+.box-plan h3 {
+    font-weight: 900;
+    color: var(--primary-color);
+    font-size: 20px;
+    text-align: center;
+}
+
+.box-plan .plan-time {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-weight: 100;
+    text-align: center;
+}
+
+.box-plan p {
+    text-align: center;
+    font-size: 12px;
+}
+
+.box-plan .money-plan {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 900;
+    text-align: center;
+}
+
+.box-plan .money-plan sup {
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.box-plan .money-plan small {
+    font-weight: 100;
+    font-size: 14px;
+    color: var(--text-color-gray);
+    font-weight: 400;
+}
+
+.box-plan p strong {
+    color: var(--primary-color);
+    font-weight: 900;
+}
+
+.box-plan button {
+    display: block;
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: none;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.box-plan-assinatura .garantir-vaga {
+    display: block;
+    padding: 10px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid var(--primary-color);
+}
+
+/*METHOD USED*/
+#use-method{
+    width: 100%;
+    margin: 100px 0px;
+}
+
+#use-method .interface {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+LINEAR .exemplo {
+    background: linear-gradient(to bottom, red, blue);
+  }
+  
+#use-method .interface .flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+#use-method .interface .flex h2{
+    font-size: 35px;
+    font-weight: 700;
+    color: #E1E1E6;
+}
+#use-method .interface .flex p{
+    font-weight: 500;
+}
+
+#method .flex .box h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+#method .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+#method .flex .box{
+    width: 370px;
+}
+
+/*COMPANY PARTNERS*/
+.partners-company{
+    width: 100%;
+   text-align: center;
+}
+.partners-company h2{
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.partners-company .interface .flex{
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/*WHO GONNA TEACH*/
+#who-gonna-teach {
+    width: 100%;
+    margin: 150px 0px;
+}
+
+#who-gonna-teach h2 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    margin: 100px 0px 20px;
+}
+
+#who-gonna-teach .description-teach {
+    color: var(--text-color-gray);
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#who-gonna-teach .interface .flex {
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box-teacher {
+    font-size: 14px;
+}
+
+.box-teacher .img-teach {
+    width: 200px;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+    border-radius: 4px;
+    position: relative;
+    transition: 0.5s ease-in;
+
+}
+
+.overlay-img {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 20;
+    position: absolute;
+    width: 260px;
+    height: 360px;
+    opacity: 0.35;
+    border-radius: 14px;
+}
+
+.box-teacher .img-teach:hover {
+    transform: scale(0.98);
+}
+
+.box-teacher .name-teach {
+    padding: 10px 0px;
+    font-size: 16px;
+}
+
+.box-teacher .especialist {
+    color: var(--primary-color);
+    font-size: 14px;
+    padding: 6px 0px;
+}
