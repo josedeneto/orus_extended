@@ -7,6 +7,7 @@ Este projecto foi desenvolvimento com as seguintes tecnologias:
 
 - HTML
 - CSS
+- Javascript
 - Git e Github
 
 ## 💻Projecto
@@ -15,7 +16,7 @@ Este projecto foi desenvolvimento com as seguintes tecnologias:
  voltado para quem pretende fazer carreira  Flutter com acompanhamento
  dos melhores Devs de Angola.
 
- A Orus Extended é um projecto que faz parte do meu portifolio
+  A Orus Extended é um projecto que faz parte do meu portifolio
 
  ## :memo: Licença
 
